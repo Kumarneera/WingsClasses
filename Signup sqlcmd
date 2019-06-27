@@ -1,0 +1,19 @@
+pif@Pif:~$ sqlcmd -S localhost -U SA
+Password: 
+1> USE wingslasses
+2> go
+Msg 911, Level 16, State 1, Server Pif, Line 1
+Database 'wingslasses' does not exist. Make sure that the name is entered correctly.
+1> USE wingsclasses;
+2> go
+Changed database context to 'wingsclasses'.
+1> Create table signup(user_id int  primary key identity(1,1),user_name varchar(30),email varchar(40),user_password varchar(20));
+2> go
+1> select * from signup
+2> go
+user_id     user_name                      email                                    user_password       
+----------- ------------------------------ ---------------------------------------- --------------------
+
+(0 rows affected)
+1> 
+
